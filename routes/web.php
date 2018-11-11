@@ -12,10 +12,7 @@
 */
 
 Route::get('/', function () {
-
-	// dd(phpinfo());
-
-    return view('welcome');
+	return redirect('admin');
 });
 
 Route::get('/admin',['uses' => 'Admin\Auth\LoginController@index'])->name('login');
